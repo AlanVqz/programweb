@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title >El sistema solar</title>
+<style>
+  h1 {
+    text-align: center;
+    color: white;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+  }
+  table {
+    width: 75%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  img {
+    width: 100px;
+    cursor: pointer;
+  }
+  #planet-info {
+    width: 75%;
+    margin: 20px auto;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <h1>El sistema solar</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Mercurio</th>
+        <th>Venus</th>
+        <th>Tierra</th>
+        <th>Marte</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="mercurio.jpg" alt="Mercurio" onclick="showPlanetInfo('mercurio.jpg')" style="width: 350px; height: auto;"></td>
+        <td><img src="venus.jpg" alt="Venus" onclick="showPlanetInfo('venus.jpg')" style="width: 200px; height: auto;"></td>
+        <td><img src="tierra.jpg" alt="Tierra" onclick="showPlanetInfo('tierra.jpg')" style="width: 300px; height: auto;"></td>
+        <td><img src="marte.jpg" alt="Marte" onclick="showPlanetInfo('marte.jpg')" style="width: 200px; height: auto;"></td>
+      </tr>
+    </tbody>
+  </table>
+  <div id="planet-info">
+    <iframe id="planet-iframe" width="600" height="600" frameborder="0"></iframe>
+  </div>
+
+  <script>
+    function showPlanetInfo(imageSrc) {
+      var iframe = document.getElementById('planet-iframe');
+      iframe.src = imageSrc;
+    }
+  </script>
+</body>
+</html>

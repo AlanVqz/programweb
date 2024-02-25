@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El sistema solar</title>
+<style>
+  h1 {
+    text-align: center;
+    color: white;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+  }
+  table {
+    width: 75%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  img {
+    width: 100%;
+    cursor: pointer;
+  }
+  #planet-info {
+    width: 75%;
+    margin: 20px auto;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <h1>El sistema solar</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Mercurio</th>
+        <th>Venus</th>
+        <th>Tierra</th>
+        <th>Marte</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="https://www.nationalgeographic.com.es/medio/2022/07/31/el-planeta-mercurio_c7bafef8_1280x720.jpg" alt="Mercurio" onclick="showPlanetInfo('https://www.nationalgeographic.com.es/medio/2022/07/31/el-planeta-mercurio_c7bafef8_1280x720.jpg')"></td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Venus_globe.jpg/800px-Venus_globe.jpg" alt="Venus" onclick="showPlanetInfo('https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Venus_globe.jpg/800px-Venus_globe.jpg')"></td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/As08-16-2593.jpg/640px-As08-16-2593.jpg" alt="Tierra" onclick="showPlanetInfo('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/As08-16-2593.jpg/640px-As08-16-2593.jpg')"></td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Schiaparelli_Hemisphere_Enhanced.jpg/800px-Schiaparelli_Hemisphere_Enhanced.jpg" alt="Marte" onclick="showPlanetInfo('https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Schiaparelli_Hemisphere_Enhanced.jpg/800px-Schiaparelli_Hemisphere_Enhanced.jpg')"></td>
+      </tr>
+    </tbody>
+  </table>
+  <div id="planet-info">
+    <iframe id="planet-iframe" width="600" height="600" frameborder="0"></iframe>
+  </div>
+
+  <script>
+    function showPlanetInfo(imageSrc) {
+      var iframe = document.getElementById('planet-iframe');
+      iframe.src = imageSrc;
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,77 @@
+.cuadro-container {
+    display: flex;
+    justify-content: center; 
+    position: fixed;
+    top: 50px;
+    width: 100%; 
+    z-index: 999;
+}
+header {
+    font-size: 24px; 
+}
+
+.cuadro {
+    background-color: rgb(100, 141, 39);
+    color: white;
+    padding: 20px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+
+}
+
+.cuadro:hover {
+    background-color: darkblue;
+}
+
+
+
+main {
+    margin-top: 90px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.content-izquierda {
+    float: left;
+    width: 50%;
+}
+
+.form-container {
+    float: right;
+    width: 25%;
+    padding: 20px;
+}
+
+.form-container input[type=text], 
+.form-container input[type=password] {
+    width: 100%;
+    padding: 6px 14px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    background-color: blue;
+    color: white;
+    padding: 10px 16px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 25px;
+}
+
+.form-container button:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}

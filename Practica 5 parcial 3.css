@@ -1,0 +1,39 @@
+#cajaformulario {
+    float: left;
+    padding: 20px;
+    border: 1px solid #999999;
+    background-color: red; 
+}
+
+#cajadatos {
+    float: left;
+    width: 400px;
+    margin-left: 20px;
+    padding: 20px;
+    border: 1px solid #999999;
+    background-color: grey;
+}
+
+#clave, #texto {
+    width: 200px;
+}
+
+#cajadatos > div {
+    padding: 5px;
+    border-bottom: 1px solid #999999;
+    background-color: grey; 
+}
+
+
+input[type="button"] {
+    background-color: white;
+    border: 1px solid #999999;
+    color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+input[type="button"]:active {
+    background-color: blue;
+    color: white;
+}

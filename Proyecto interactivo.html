@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog sobre Manejo de Archivos JavaScript</title>
+    <link rel="stylesheet" type="text/css" href="diseño.css">
+
+</head>
+<body>
+    <header>
+        <h1>Blog sobre Manejo de Archivos JavaScript</h1>
+    </header>
+
+    <nav>
+        <a href="Proyecto.html"onclick="changeColor(this)">Informacion</a>
+        <a href="Proyecto impactos.html"onclick="changeColor(this)">Impacto</a>
+        <a href="Proyecto Situacion.html" onclick="changeColor(this)">Situacion</a>
+        <a href="Proyecto Vision a Futuro.html" onclick="changeColor(this)">Vision a Futuro</a>
+        <a href="Proyecto Videos.html" onclick="changeColor(this)">Videos</a>
+        <a href="Proyecto interactivo.html" onclick="changeColor(this)">Interaccion</a>
+        <a href="Proyecto Galeria.html" onclick="changeColor(this)">Galeria</a>
+        <a href="Proyecto Ayuda.html" onclick="changeColor(this)">Ayuda</a>
+    </nav>
+
+    <section>
+        <h2>Artículo 1: Introducción al manejo de archivos JavaScript</h2>
+        <p>Contenido del artículo...</p>
+
+        <h3>Deja un comentario</h3>
+        <form id="commentForm">
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="comment">Comentario:</label><br>
+            <textarea id="comment" name="comment" required></textarea><br>
+            <button type="submit">Enviar comentario</button>
+        </form>
+        <div id="commentSection">
+        </div>
+
+        <h3>Contacto</h3>
+        <form id="contactForm">
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <button type="submit">Enviar mensaje</button>
+        </form>
+
+        <h3>Cuestionario</h3>
+        <form id="quizForm">
+        </form>
+
+        <h3>Chat</h3>
+        <div id="chat">
+        </div>
+    </section>
+
+    <footer>
+        <p>Derechos de autor © 2024 - Blog sobre Manejo de Archivos JavaScript</p>
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>

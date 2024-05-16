@@ -5,52 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Proyecto IoT y la Hiperconexión</title>
     <link rel="icon" type="image/jpeg" href="https://media.istockphoto.com/id/1184401187/photo/internet-of-things-wireless-communication-network-abstract-image-visual.jpg?s=612x612&w=0&k=20&c=Thb4RuYqcfOHMepqOfazEhU3ZIp5J_eTerZ5GxxreOQ=">
-    <style>
-
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header {
-        background-color: gray;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        width: 100%;
-    }
-
-    nav {
-        background-color: blue;
-        padding: 10px;
-        width: 100%;
-        text-align: center;
-    }
-
-    nav a {
-        color: white;
-        text-decoration: none;
-        margin: 0 15px;
-    }
-
-    section {
-        padding: 20px;
-        width: 80%;
-        box-sizing: border-box;
-    }
-
-    input[type="search"] {
-        width: 80%;
-        padding: 10px;
-        margin: 10px;
-        box-sizing: border-box;
-    }
-</style>
+    <link rel="stylesheet" type="text/css" href="diseño.css">
 </head>   
 <body>
     <header>
@@ -58,48 +13,43 @@
     </header>
 
     <nav>
-        <a href="Proyecto.html">Informacion</a>
-        <a href="Proyecto impactos.html">Impacto</a>
-        <a href="Proyecto Situacion.html">Situacion</a>
-        <a href="#Vision">Vision a Futuro</a>
-        <a href="#Videos">Videos</a>
-        <a href="#Interaccion">Interaccion</a>
-        <a href="#Galeria">Galeria</a>
-        <a href="#Ayuda">Ayuda</a>
+        <a href="Proyecto.html"onclick="changeColor(this)">Informacion</a>
+        <a href="Proyecto impactos.html"onclick="changeColor(this)">Impacto</a>
+        <a href="Proyecto Situacion.html" onclick="changeColor(this)">Situacion</a>
+        <a href="Proyecto Vision a Futuro.html" onclick="changeColor(this)">Vision a Futuro</a>
+        <a href="Proyecto Videos.html" onclick="changeColor(this)">Videos</a>
+        <a href="Proyecto interactivo.html" onclick="changeColor(this)">Interaccion</a>
+        <a href="Proyecto Galeria.html" onclick="changeColor(this)">Galeria</a>
+        <a href="Proyecto Ayuda.html" onclick="changeColor(this)">Ayuda</a>
     </nav>
 
     <section id="Vision">
-        <h2 style="color: blue;">Visión a Futuro</h2>
+        <h2 style="color: blue;">Vision a furturo</h2>
         
-        <h3><b><p>Expectativas y Futuros Avances del IoT</p></b></h3>   
-        <p>La hiperconexión impulsada por el Internet de las Cosas (IoT) promete transformar aún más nuestra vida cotidiana y diversos sectores industriales. Se espera que en el futuro veamos avances significativos en áreas como:</p>
-        <ul>
-            <li><b>Integración Total:</b> Donde cada aspecto de nuestras vidas, desde el hogar hasta el trabajo y la movilidad, esté completamente integrado y optimizado a través del IoT.</li>
-            <li><b>Inteligencia Artificial y Análisis de Datos:</b> El IoT se combinará aún más con la inteligencia artificial y el análisis avanzado de datos para ofrecer insights más profundos y decisiones autónomas más precisas.</li>
-            <li><b>Salud y Bienestar:</b> Se espera una revolución en la atención médica y el bienestar personal, con dispositivos IoT que monitorean la salud en tiempo real y brindan intervenciones preventivas y personalizadas.</li>
-            <li><b>Ciudades Inteligentes:</b> Las ciudades inteligentes se volverán aún más eficientes y sostenibles, con IoT gestionando el tráfico, la energía, los residuos y otros aspectos clave de la vida urbana.</li>
-            <li><b>Industria 4.0:</b> La industria se transformará por completo con la adopción generalizada de IoT en la fabricación, logística, mantenimiento predictivo y más, dando paso a la era de la Industria 4.0.</li>
-        </ul>
+        <p>El Internet de las Cosas (IoT) y la hiperconexión están transformando rápidamente la forma en que interactuamos con el mundo digital y físico. A medida que avanzamos hacia un futuro cada vez más conectado, se espera que el área de IoT experimente importantes avances en varios campos. Aquí hay algunas expectativas y tendencias futuras:</p>
 
-        <h3><b><p>Estadísticas y Proyecciones Futuras</p></b></h3>
-        <p>A continuación, se presentan algunas estadísticas y proyecciones futuras del IoT:</p>
         <ol type="1" start="1">     
-            <li><p>Se estima que para 2030, más del 90% de los objetos cotidianos estarán conectados a Internet, lo que generará enormes cantidades de datos para su análisis y utilización.</p></li>
-            <li><p>Los avances en la tecnología de comunicaciones, como la llegada del 5G, impulsarán aún más la adopción del IoT, permitiendo conexiones más rápidas y confiables entre dispositivos.</p></li>
-            <li><p>El concepto de "Gemelos Digitales", modelos virtuales de objetos físicos, se volverá omnipresente en el IoT, permitiendo una simulación precisa y el monitoreo en tiempo real de activos y sistemas.</p></li>
+        <li><p><b>Mayor adopción en diversos sectores:</b> El IoT se implementará en una variedad de sectores, como la salud, la agricultura, la manufactura, la logística, la energía y las ciudades inteligentes. Se espera que estas implementaciones mejoren la eficiencia operativa, optimicen los recursos y generen nuevas oportunidades comerciales.</p></li>
+        <li><p><b>Desarrollo de estándares y protocolos:</b> Con la proliferación de dispositivos IoT de diferentes fabricantes, se necesitarán estándares y protocolos sólidos para garantizar la interoperabilidad, la seguridad y la privacidad de los datos. Se esperan avances en este sentido para establecer un marco común de comunicación.</p></li>
+        <li><p><b>Edge Computing y procesamiento de datos en tiempo real:</b>A medida que aumenta el número de dispositivos IoT, la capacidad de procesamiento en la nube puede no ser suficiente para manejar todos los datos generados. Se espera un mayor énfasis en el edge computing, donde el procesamiento de datos se realiza más cerca de la fuente de generación, permitiendo análisis en tiempo real y reduciendo la latencia.</p></li>
+        <li><p><b>Inteligencia Artificial y Análisis Avanzado:</b>La combinación de IoT con técnicas avanzadas de inteligencia artificial, como el aprendizaje automático y el análisis predictivo, permitirá extraer información valiosa de los datos generados por los dispositivos. Esto conducirá a una toma de decisiones más informada y automatizada en diversos contextos.</p></li>
+        <li><p><b>Seguridad y Privacidad mejoradas:</b> A medida que la cantidad de dispositivos conectados aumenta, también lo hace la superficie de ataque potencial para ciberataques. Se espera un enfoque renovado en la seguridad y la privacidad, con la adopción de técnicas como la encriptación, la autenticación robusta y la segmentación de red.</p></li>
         </ol>
 
-     	<img src="https://cdn.statcdn.com/Infographic/images/normal/7742.jpeg" alt="Mapa de Imagen" usemap="#mapa">
-    <map name="mapa">
-        <!-- Áreas interactivas -->
-        <area shape="rect" coords="0,0,50,50" href="https://www.ejemplo.com/pagina1" alt="Área 1">
-        <area shape="circle" coords="100,100,50" href="https://www.ejemplo.com/pagina2" alt="Área 2">
-        <area shape="polygon" coords="200,200,250,250,300,200" href="https://www.ejemplo.com/pagina3" alt="Área 3">
-    </map>
+        <h3>Fuentes:</h3>
+        <a href="https://www.bbvaopenmind.com/articulos/avance-tecnologico-riesgos-y-desafios/">Avance tecnológico: riesgos y desafíos: </a><br>
+        <a href="https://www.cisco.com/c/es_mx/solutions/internet-of-things/overview.html](https://www.cisco.com/c/es_mx/solutions/internet-of-things/overview.html)"> Cisco Internet de las cosas:</a><br>
+        <a href="https://www.ericsson.com/en/internet-of-things](https://www.ericsson.com/en/internet-of-things)">Ericsson Internet de las cosas: </a><br>
+        <a href="https://www.tokioschool.com/noticias/internet-de-las-cosas-evolucion/](https://www.tokioschool.com/noticias/internet-de-las-cosas-evolucion/)">Tokio School Evolución del Internet de las cosas: </a><br>
+        <a href="https://www.ferrovial.com/es/recursos/internet-de-las-cosas/](https://www.ferrovial.com/es/recursos/internet-de-las-cosas/)">Ferrovial Internet de las cosas: </a><br>
+        <a href="https://www.gartner.es/es/articulos/las-principales-predicciones-estrategicas-de-gartner-para-2024-y-los-proximos-anos](https://www.gartner.es/es/articulos/las-principales-predicciones-estrategicas-de-gartner-para-2024-y-los-proximos-anos)">Gartner Predicciones estratégicas:  </a><br>
 
+        <h3>Estadisticas: </h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReFxoSMobXYAsvklweQOxZKkZZkeyXpMRJrvCXSh2sXg&s"style="width:600px; usemap="#logo alt="IMG"/>
     </section>
     <footer>
         <p>Derechos de autor © 2024 - Proyecto IoT y la Hiperconexión</p>
     </footer>
+    <script src="menu.js"></script>
 </body>
 </html>

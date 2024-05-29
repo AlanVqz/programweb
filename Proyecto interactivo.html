@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Blog sobre Manejo de Archivos JavaScript</h1>
+        <h1 style="color: blue;">IoT y la hiperconexión</h1>   
     </header>
 
     <nav>
@@ -24,7 +24,6 @@
     </nav>
 
     <section>
-        <h2>Artículo 1: Introducción al manejo de archivos JavaScript</h2>
         <p>Contenido del artículo...</p>
 
         <h3>Deja un comentario</h3>
@@ -51,9 +50,81 @@
         <form id="quizForm">
         </form>
 
+        <div class="container">
+        <h2>Cuestionario Diagnóstico</h2>
+
+    <form action="/enviar_datos" method="post">
+        <label for="pregunta1">¿Qué es el Internet de las Cosas (IoT) y cómo se diferencia de la hiperconexión?</label>
+        <select id="pregunta1" name="pregunta1" required>
+            <option value="a">A) Una red de dispositivos conectados que recopilan y comparten datos</option>
+            <option value="b">B) Un nuevo tipo de conexión a Internet más rápida</option>
+            <option value="c">C) Un sistema para transmitir datos a larga distancia</option>
+            <option value="d">D) Ninguna de las anteriores</option>
+        </select>
+
+        <label for="pregunta2">¿Cuál es el papel de los sensores en el IoT y cómo se relacionan con la hiperconexión?</label>
+        <select id="pregunta2" name="pregunta2" required>
+            <option value="a">A) Recopilan datos del entorno y los envían a otros dispositivos</option>
+            <option value="b">B) Permiten la comunicación entre personas</option>
+            <option value="c">C) Sirven para medir la velocidad de Internet</option>
+            <option value="d">D) Ninguna de las anteriores</option>
+        </select>
+
+        <label for="pregunta3">¿Qué beneficios y desafíos presenta la integración del IoT en la industria?</label>
+        <select id="pregunta3" name="pregunta3" required>
+            <option value="a">A) Aumenta la eficiencia pero presenta riesgos de seguridad</option>
+            <option value="b">B) Reduce la necesidad de comunicación</option>
+            <option value="c">C) No tiene impacto significativo</option>
+            <option value="d">D) Ninguna de las anteriores</option>
+        </select>
+
+        <label for="pregunta4">¿Cuáles son algunas vulnerabilidades comunes en los dispositivos IoT y cómo pueden mitigarse en un entorno hiperconectado?</label>
+        <select id="pregunta4" name="pregunta4" required>
+            <option value="a">A) Falta de actualizaciones de seguridad y se mitigan con parches regulares</option>
+            <option value="b">B) Baterías de baja duración</option>
+            <option value="c">C) Alto costo de mantenimiento</option>
+            <option value="d">D) Ninguna de las anteriores</option>
+        </select>
+
+        <label for="pregunta5">¿Cómo se pueden utilizar los datos generados por los dispositivos IoT para mejorar la eficiencia operativa en diferentes sectores y cómo afecta esto a la hiperconexión?</label>
+        <select id="pregunta5" name="pregunta5" required>
+            <option value="a">A) Optimizando procesos y mejorando la toma de decisiones</option>
+            <option value="b">B) Aumentando la cantidad de datos disponibles en Internet</option>
+            <option value="c">C) Disminuyendo la cantidad de datos recopilados</option>
+            <option value="d">D) Ninguna de las anteriores</option>
+        </select>
+
+        <label for="pregunta6">¿Qué impacto tiene la adopción masiva del IoT en la privacidad de los usuarios y cómo se equilibra esta preocupación con la necesidad de recopilar datos para mejorar los servicios en un entorno hiperconectado?</label>
+        <select id="pregunta6" name="pregunta6" required>
+            <option value="a">A) Aumenta las preocupaciones de privacidad, se equilibra con políticas de protección de datos</option>
+            <option value="b">B) No tiene impacto en la privacidad</option>
+            <option value="c">C) Disminuye la privacidad pero aumenta la eficiencia</option>
+            <option value="d">D) Ninguna de las anteriores</option>
+        </select>
+
+        <label for="pregunta7">¿Cuál es el papel de la inteligencia artificial y el aprendizaje automático en el análisis de datos generados por el IoT en un entorno hiperconectado?</label>
+        <select id="pregunta7" name="pregunta7" required>
+            <option value="a">A) Analizar grandes cantidades de datos para obtener insights</option>
+            <option value="b">B) Reemplazar los dispositivos IoT</option>
+            <option value="c">C) Crear nuevos dispositivos IoT</option>
+            <option value="d">D) Ninguna de las anteriores</option>
+        </select>
+
+        <label for="pregunta8">¿Qué medidas se pueden tomar para garantizar la sostenibilidad y la eficiencia energética en un entorno hiperconectado con una gran cantidad de dispositivos IoT?</label>
+        <select id="pregunta8" name="pregunta8" required>
+            <option value="a">A) Utilizar tecnologías de bajo consumo y energías renovables</option>
+            <option value="b">B) Aumentar el uso de energía no renovable</option>
+            <option value="c">C) Reducir la cantidad de dispositivos conectados</option>
+            <option value="d">D) Ninguna de las anteriores</option>
+        </select>
+
         <h3>Chat</h3>
         <div id="chat">
-        </div>
+
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+
     </section>
 
     <footer>
